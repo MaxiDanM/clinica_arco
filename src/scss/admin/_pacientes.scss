@@ -1,0 +1,51 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.listado-pacientes thead tr {
+    background-color: #007df4;
+}
+
+.listado-pacientes {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid v.$gris;
+    border-collapse: collapse;
+    margin-top: 10px;
+    @media (max-width: 1370px) {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    @media (max-width: 700px) {
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+.listado-pacientes tbody tr td {
+    text-align: center;
+    padding: 10px 10px;
+    @media (max-width: 1370px) {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    @media (max-width: 700px) {
+        padding: 3px 3px;
+        font-size: 9px;
+    }
+}
+
+.listado-pacientes thead tr th {
+    padding: 10px 10px;
+    color: v.$blanco;
+    @media (max-width: 1370px) {
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+    @media (max-width: 700px) {
+        padding: 3px 3px;
+        font-size: 9px;
+    }
+}
